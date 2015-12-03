@@ -3036,7 +3036,7 @@
 					}
 
 						ul.actions li > *.icon:before {
-							margin-left: -2em;
+							margin-left: 0em;
 						}
 
 				ul.actions.small li {
