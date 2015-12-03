@@ -1,231 +1,512 @@
 <!DOCTYPE HTML>
 <!--
-	Landed by HTML5 UP
+	Read Only by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
-		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 		<title>Rigo Orozco</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.scrolly.min.js"></script>
-		<script src="js/jquery.dropotron.min.js"></script>
-		<script src="js/jquery.scrollex.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-layers.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-medium.css" />
-		</noscript>
-
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
-	<body class="landing">
+	<body>
 
-		<!-- Top Menu/Header -->
-		<header id="header">						
-			<h1 id = "logo"><a href="index.html">Rigo Orozco</a></h1>						<!-- a = hyperlink -->
-			<nav id="nav"> 																	<!-- nav = navigation links -->
-				<ul> 																		<!-- ul = Unordered list -->
-					<li><a href="index.html">Home</a></li> 									<!-- li = list item -->
-					<li><a href="#one" class="scrolly">About Me</a></li>
-					<li><a href="#main" class="scrolly">Project Portfolio</a></li>
-					<li><a href="#four" class="scrolly">Contact</a></li>
-					<!--<li><a href="#" class="button special">Sign Up</a></li>-->
-				</ul>
-			</nav>
-		</header>
-
-		<!-- Banner -->
-		<section id="banner">
-			<div class="content">
+		<!-- Header -->
+			<section id="header">
 				<header>
-					<h2>Rigo Orozco</h2>
-					<p>Student at the University of Washington <br/>Electrical Engineering</p>
+					<span class="image avatar"><img src="images/intro_pic.jpg" alt="" /></span>
+					<h1 id="logo"><a href="#">Rigo Orozco-Diaz</a></h1>
+					<p>I got reprogrammed by a rogue AI<br />
+					and now I'm totally cray</p>
 				</header>
-				<span class="image"><img src="images/intro_pic.jpg" alt="" /></span>
-			</div>
-			<a href="#one" class="goto-next scrolly">Next</a>								<!-- arrow to next part -->
-		</section>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active">About</a></li>
+						<li><a href="#two">Things I Can Do</a></li>
+						<li><a href="#three">A Few Accomplishments</a></li>
+						<li><a href="#four">Contact</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/rigorozco" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/rigoorozco" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:rigodiaz@uw.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="docs/resume.pdf" target="_blank" class="icon fa-file-pdf-o"><span class="label">Resume</span></a></li>
+					</ul>
+					<p style="color:#99a7b5;"><br>&copy; Rigo Orozco. All rights reserved.</p>
+				</footer>
+			</section>
 
-		<!-- About Me / One -->
-		<section id="one" class="spotlight style1 bottom">
-			<span class="image fit main"><img src="images/greenlake.jpg" alt="" /></span>
-			<div class="content">
-				<div class="container">
-					<header>
-						<h2>About Me</h2>
-						<p>I am currently a student at the University of Washington majoring in Electrical Engineering with a focus in Embedded Systems. I'm searching for an internship in hardware or software engineering. I am very motivated and a critical thinker and I believe I've got what it takes to be great engineer.</p>
-					</header>	
-				</div>
-			</div>
-			<a href="#main" class="goto-next scrolly">Next</a>
-		</section>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-		<!-- Main -->
-			<div id="main" class="wrapper style1">
-				<div class="container">
-					<header class="major">
-						<h2>Project Portfolio</h2>
-						<!--<p>Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan</p>-->
-					</header>
-					<div class="row 150%">
-						<div class="8u 12u$(medium)">
-							<!-- Content -->
-							<section id="content">
-								<a href="#" class="image fit"><img src="images/tank.png" alt="" /></a>
-								<h3>RoboTank: Autonomous Self Driving Tank</h3>
-								<p>Built around the TI Stellaris LM3S8962. RoboTank was designed to be controlled remotely via Bluetooth as well as autonomously using distance sensors to be maneuvered around confined spaces. Drivers and software for the ADCs, PWMs, UART and other hardware used were all written from scratch for this project (C). FreeRTOS (real time operating system) was used to program the tank.</p>
-								<ul class="actions">
-											<li><a href="docs/tank.pdf" class="button">Report</a></li>
-								</ul>
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="container">
+									<header class="major">
+										<h2>About Me</h2>
+										<p>Electrical Engineering Student at the University of Washington</p>
+									</header>
+									<p>I am currently a student at the University of Washington majoring in Electrical Engineering with a focus in Embedded Systems. I'm searching for an internship in hardware or software engineering. I am very motivated and a critical thinker and I believe I've got what it takes to be great engineer.</p>
+								</div>
 							</section>
 
-							<section id="content">
-								<a href="#" class="image fit"><img src="images/uart.png" alt="" /></a>
-								<h3>Universal Asynchronous Receive/Transmitter</h3>
-								<p>Designed a UART in Verilog and programmed the NIOS II microprocessor on a FPGA to run a C application to send and receive byte sized data over a serial link.</p>
-								<ul class="actions">
-									<li><a href="docs/uart.pdf" class="button" target="_blank">Report</a></li>
-								</ul>
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<h3>Things I Can Do</h3>
+									<p>I am a multi-skilled individual who enjoys a good challenge. Whether it be repairing an old stereo to give it a few more years of life or learning how to play a new song on the guitar, I enjoy the thrill of learning new things and treading uncharted territory</p>
+									<ul class="feature-icons">
+										<li class="fa-code">Coding in new languages</li>
+										<li class="fa-wrench">Repairing electronics</li>
+										<li class="fa-beer">Trying out new beers</li> 
+										<li class="fa-smile-o">Making new friends</li>
+										<li class="fa-music">Playing the guitar</li>
+										<li class="fa-book">Reading books and stuff</li>
+									</ul>
+								</div>
 							</section>
-						</div>
 
-						<div class="4u$ 12u$(medium)">
-						<!-- Sidebar -->
-							<section id="sidebar">
-								<section>
-									<div style="margin: 0px auto; text-align: center;">
-										<iframe width="205" height="364" src="https://www.youtube.com/embed/3sT-J5ucjyY" frameborder="0" allowfullscreen></iframe>
+						<!-- Three -->
+							<section id="three">
+								<div class="container">
+									<h3>A Few Accomplishments</h3>
+									<p>In the last year of my undergradute career in Electrical Engineering, I have amassed a goldmine of knowledge regarding hardware and software design. Through many long nights of coding and studying, I was able to complete some really interesting projects. Here are a few of the projects I enjoyed working on the most.</p>
+									<div class="features">
+										<article>
+											<a href="#" class="image"><img src="images/tank.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>RoboTank: Autonomous Self-driving Tank</h4>
+												<p>Built around the TI Stellaris LM3S8962. RoboTank was designed to be controlled remotely via Bluetooth as well as autonomously using distance sensors to be maneuvered around confined spaces. Drivers and software for the ADCs, PWMs, UART and other hardware used were all written from scratch for this project (C). FreeRTOS (real time operating system) was used to program the tank.</p>
+												<ul class="actions">
+													<li><a href="docs/tank.pdf" class="button">Report</a></li>
+												</ul>
+											</div>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/uart.png" alt="" /></a>
+											<div class="inner">
+												<h4>Universal Asynchronous Receive/Transmitter</h4>
+												<p>Designed a UART in Verilog and programmed the NIOS II microprocessor on a FPGA to run a C application to send and receive byte sized data over a serial link.</p>
+												<ul class="actions">
+													<li><a href="docs/uart.pdf" class="button">Report</a></li>
+												</ul>
+											</div>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/amp.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>Class AB Amplifier with Variable Gain</h4>
+												<p>Built an audio amplifier using an Op-amp design with BJTs to amplify a signal from an iPhone to a speaker using approximately 1 Watt of power consumption</p>
+												<ul class="actions">
+													<li><a href="docs/amp.pdf" class="button">Report</a></li>
+												</ul>
+											</div>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/acdc.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>AC/DC Coverter with Voltage Regulator</h4>
+												<p>Built an AC/DC converter using a full bridge rectifier and boost topology design to convert 7.5VAC to a variable 10VDC to 20VDC.</p>
+												<ul class="actions">
+													<li><a href="docs/acdc.pdf" class="button">Report</a></li>
+												</ul>
+											</div>
+										</article>
 									</div>
-									<h3>RoboTank in Autonomous Mode</h3>
-								</section>
-								<section>
-									<a href="#" class="image fit"><img src="images/amp.jpg" alt="" /></a>
-									<h3>Class AB Amplifier with Variable Gain</h3>
-									<p>Built an audio amplifier using an Op-amp design with BJTs to amplify a signal from an iPhone to a speaker using approximately 1 Watt of power consumption</p>
-									<footer>
-										<ul class="actions">
-											<li><a href="docs/amp.pdf" class="button" target="_blank">Report</a></li>
-										</ul>
-									</footer>
-								</section>
-								<hr />
-								<section>
-									<a href="#" class="image fit"><img src="images/acdc.jpg" alt=""></a>
-									<h3>AC/DC Coverter with Voltage Regulator</h3>
-									<p>Built an AC/DC converter using a full bridge rectifier and boost topology design to convert 7.5VAC to a variable 10VDC to 20VDC.</p>
-									<footer>
-										<ul class="actions">
-											<li><a href="docs/acdc.pdf" class="button" target="_blank">Report</a></li>
-										</ul>
-									</footer>
-								</section>
+								</div>
 							</section>
-						</div>
 
-						<div class="8u 12u$(medium)">
-							<!-- Content -->
-							<h4>Course Work</h4>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Class Number</th>
-											<th>Course Description</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>E E 271</td>
-											<td>Digital Circuits and Systems</td>
-										</tr>
-										<tr>
-											<td>E E 331</td>
-											<td>Semiconductor Diode and Field-effect Transistor Circuit Design</td>
-										</tr>
-										<tr>
-											<td>E E 332</td>
-											<td>Bipolar Transistor Circuit Design</td>
-										</tr>
-										<tr>
-											<td>E E 371</td>
-											<td>Design of Digital Circuits and Systems</td>
-										</tr>
-										<tr>
-											<td>E E 461</td>
-											<td>Computer Network Architectures and Protocols</td>
-										</tr>
-										<tr>
-											<td>E E 472</td>
-											<td>Microcomputer Systems</td>
-										</tr>
-										<tr>
-											<td>E E 471 (Fall '15)</td>
-											<td>Computer Design and Organization</td>
-										</tr>
-										<tr>
-											<td>CSE 351 (Fall '15)</td>
-											<td>Hardware/Software Interface</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		<!-- LinkedIn, Email, CV -->
-		<section id="four" class="wrapper style1 special fade-up">
-			<div class="container">
-				<header class="major">
-					<h2>Contact</h2>
-					<!--<p>subtitle</p>-->
-				</header>
-				<div class="box alt">
-					<div class="row uniform">
+						<!-- Four -->
+							<section id="four">
+								<div class="container">
+									<h3>Contact Me</h3>
+									<p>Feel free to reach out if you'd like to learn more about me. I'm always glad to talk to new people.</p>
+									<ul class="icons">
+										<a href="https://www.linkedin.com/in/rigorozco" target="_blank"><li class="icon fa-linkedin"><br>LinkedIn</li></a>
+										<a href="mailto:rigodiaz@uw.edu"><li class="icon fa-envelope"><br>Email</li></a>
+										<a href="docs/resume.pdf"><li class="icon fa-file-pdf-o" target="_blank"><br>Resume</li></a>
+									</ul>
+							</section>
 						
-						<section class="4u 6u$(medium) 12u$(xsmall)">
-							<!--<span class="icon major fa-linkedin"></span>-->
-							<a href="https://www.linkedin.com/in/rigorozco" class="icon major fa-linkedin" target="_blank">
-								<span class="label"></span>
-							</a>
-							<h3><a href="https://www.linkedin.com/in/rigorozco" target="_blank">LinkedIn</a></h3>
-						</section>
-						<section class="4u 6u$(medium) 12u$(xsmall)">
-							<!--<span class="icon major fa-envelope"></span>-->
-							<a href="mailto:rigodiaz@uw.edu" class="icon major fa-envelope">
-								<span class="label"></span>
-							</a>
-							<h3><a href="mailto:rigodiaz@uw.edu">E-Mail</a></h3>
-						</section>
-						<section class="4u 6u(medium) 12u$(xsmall)">
-							<!--<span class="icon major fa-file"></span>-->
-							<a href="docs/resume.pdf" target="_blank" class="icon major fa-file">
-								<span class="label"></span>
-							</a>
-							<h3><a href="docs/resume.pdf" target="_blank">Resume</a></h3>
-						</section>
-					</div>
-				</div>
-			</div>
-		</section>
+						<!-- Five -->
+						<!--
+							<section id="five">
+								<div class="container">
+									<h3>Elements</h3>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="copyright">
-					<li>&copy; Rigo Orozco All rights reserved.</li>
-				</ul>
-			</footer>
+									<section>
+										<h4>Text</h4>
+										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+										<hr />
+										<header>
+											<h4>Heading with a Subtitle</h4>
+											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+										</header>
+										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+										<header>
+											<h5>Heading with a Subtitle</h5>
+											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+										</header>
+										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+										<hr />
+										<h2>Heading Level 2</h2>
+										<h3>Heading Level 3</h3>
+										<h4>Heading Level 4</h4>
+										<h5>Heading Level 5</h5>
+										<h6>Heading Level 6</h6>
+										<hr />
+										<h5>Blockquote</h5>
+										<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+										<h5>Preformatted</h5>
+										<pre><code>i = 0;
+
+	while (!deck.isInOrder()) {
+	    print 'Iteration ' + i;
+	    deck.shuffle();
+	    i++;
+	}
+
+	print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+									</section>
+
+									<section>
+										<h4>Lists</h4>
+										<div class="row">
+											<div class="6u 12u(xsmall)">
+												<h5>Unordered</h5>
+												<ul>
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Sagittis adipiscing lorem eleifend.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+												</ul>
+												<h5>Alternate</h5>
+												<ul class="alt">
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Sagittis adipiscing lorem eleifend.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+												</ul>
+											</div>
+											<div class="6u 12u(xsmall)">
+												<h5>Ordered</h5>
+												<ol>
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Etiam vel felis at lorem sed viverra.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Etiam vel felis at lorem sed viverra.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+												</ol>
+												<h5>Icons</h5>
+												<ul class="icons">
+													<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+													<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+													<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+													<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+													<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+													<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
+												</ul>
+											</div>
+										</div>
+										<h5>Actions</h5>
+										<ul class="actions">
+											<li><a href="#" class="button special">Default</a></li>
+											<li><a href="#" class="button">Default</a></li>
+											<li><a href="#" class="button alt">Default</a></li>
+										</ul>
+										<ul class="actions small">
+											<li><a href="#" class="button special small">Small</a></li>
+											<li><a href="#" class="button small">Small</a></li>
+											<li><a href="#" class="button alt small">Small</a></li>
+										</ul>
+										<div class="row">
+											<div class="3u 6u(medium) 12u$(xsmall)">
+												<ul class="actions vertical">
+													<li><a href="#" class="button special">Default</a></li>
+													<li><a href="#" class="button">Default</a></li>
+													<li><a href="#" class="button alt">Default</a></li>
+												</ul>
+											</div>
+											<div class="3u 6u$(medium) 12u$(xsmall)">
+												<ul class="actions vertical small">
+													<li><a href="#" class="button special small">Small</a></li>
+													<li><a href="#" class="button small">Small</a></li>
+													<li><a href="#" class="button alt small">Small</a></li>
+												</ul>
+											</div>
+											<div class="3u 6u(medium) 12u$(xsmall)">
+												<ul class="actions vertical">
+													<li><a href="#" class="button special fit">Default</a></li>
+													<li><a href="#" class="button fit">Default</a></li>
+													<li><a href="#" class="button alt fit">Default</a></li>
+												</ul>
+											</div>
+											<div class="3u 6u$(medium) 12u$(xsmall)">
+												<ul class="actions vertical small">
+													<li><a href="#" class="button special small fit">Small</a></li>
+													<li><a href="#" class="button small fit">Small</a></li>
+													<li><a href="#" class="button alt small fit">Small</a></li>
+												</ul>
+											</div>
+										</div>
+									</section>
+
+									<section>
+										<h4>Table</h4>
+										<h5>Default</h5>
+										<div class="table-wrapper">
+											<table>
+												<thead>
+													<tr>
+														<th>Name</th>
+														<th>Description</th>
+														<th>Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Item One</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Two</td>
+														<td>Vis ac commodo adipiscing arcu aliquet.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Three</td>
+														<td> Morbi faucibus arcu accumsan lorem.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Four</td>
+														<td>Vitae integer tempus condimentum.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Five</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+												</tbody>
+												<tfoot>
+													<tr>
+														<td colspan="2"></td>
+														<td>100.00</td>
+													</tr>
+												</tfoot>
+											</table>
+										</div>
+
+										<h5>Alternate</h5>
+										<div class="table-wrapper">
+											<table class="alt">
+												<thead>
+													<tr>
+														<th>Name</th>
+														<th>Description</th>
+														<th>Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Item One</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Two</td>
+														<td>Vis ac commodo adipiscing arcu aliquet.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Three</td>
+														<td> Morbi faucibus arcu accumsan lorem.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Four</td>
+														<td>Vitae integer tempus condimentum.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Five</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+												</tbody>
+												<tfoot>
+													<tr>
+														<td colspan="2"></td>
+														<td>100.00</td>
+													</tr>
+												</tfoot>
+											</table>
+										</div>
+									</section>
+
+									<section>
+										<h4>Buttons</h4>
+										<ul class="actions">
+											<li><a href="#" class="button special">Special</a></li>
+											<li><a href="#" class="button">Default</a></li>
+											<li><a href="#" class="button alt">Alternate</a></li>
+										</ul>
+										<ul class="actions">
+											<li><a href="#" class="button special big">Big</a></li>
+											<li><a href="#" class="button">Default</a></li>
+											<li><a href="#" class="button alt small">Small</a></li>
+										</ul>
+										<ul class="actions fit">
+											<li><a href="#" class="button special fit">Fit</a></li>
+											<li><a href="#" class="button fit">Fit</a></li>
+											<li><a href="#" class="button alt fit">Fit</a></li>
+										</ul>
+										<ul class="actions fit small">
+											<li><a href="#" class="button special fit small">Fit + Small</a></li>
+											<li><a href="#" class="button fit small">Fit + Small</a></li>
+											<li><a href="#" class="button alt fit small">Fit + Small</a></li>
+										</ul>
+										<ul class="actions">
+											<li><a href="#" class="button special icon fa-download">Icon</a></li>
+											<li><a href="#" class="button icon fa-download">Icon</a></li>
+											<li><a href="#" class="button alt icon fa-check">Icon</a></li>
+										</ul>
+										<ul class="actions">
+											<li><span class="button special disabled">Special</span></li>
+											<li><span class="button disabled">Default</span></li>
+											<li><span class="button alt disabled">Alternate</span></li>
+										</ul>
+									</section>
+
+									<section>
+										<h4>Form</h4>
+										<form method="post" action="#">
+											<div class="row uniform">
+												<div class="6u 12u(xsmall)">
+													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+												</div>
+												<div class="6u 12u(xsmall)">
+													<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+												</div>
+											</div>
+											<div class="row uniform">
+												<div class="12u">
+													<div class="select-wrapper">
+														<select name="demo-category" id="demo-category">
+															<option value="">- Category -</option>
+															<option value="1">Manufacturing</option>
+															<option value="1">Shipping</option>
+															<option value="1">Administration</option>
+															<option value="1">Human Resources</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="row uniform">
+												<div class="4u 12u(medium)">
+													<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+													<label for="demo-priority-low">Low Priority</label>
+												</div>
+												<div class="4u 12u(medium)">
+													<input type="radio" id="demo-priority-normal" name="demo-priority">
+													<label for="demo-priority-normal">Normal Priority</label>
+												</div>
+												<div class="4u 12u(medium)">
+													<input type="radio" id="demo-priority-high" name="demo-priority">
+													<label for="demo-priority-high">High Priority</label>
+												</div>
+											</div>
+											<div class="row uniform">
+												<div class="6u 12u(medium)">
+													<input type="checkbox" id="demo-copy" name="demo-copy">
+													<label for="demo-copy">Email me a copy of this message</label>
+												</div>
+												<div class="6u 12u(medium)">
+													<input type="checkbox" id="demo-human" name="demo-human" checked>
+													<label for="demo-human">I am a human and not a robot</label>
+												</div>
+											</div>
+											<div class="row uniform">
+												<div class="12u">
+													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+												</div>
+											</div>
+											<div class="row uniform">
+												<div class="12u">
+													<ul class="actions">
+														<li><input type="submit" value="Send Message" /></li>
+														<li><input type="reset" value="Reset" class="alt" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</section>
+
+									<section>
+										<h4>Image</h4>
+										<h5>Fit</h5>
+										<span class="image fit"><img src="images/banner.jpg" alt="" /></span>
+										<div class="box alt">
+											<div class="row 50% uniform">
+												<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+												<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+												<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+											</div>
+											<div class="row 50% uniform">
+												<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+												<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+												<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+											</div>
+											<div class="row 50% uniform">
+												<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+												<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+												<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+											</div>
+										</div>
+										<h5>Left &amp; Right</h5>
+										<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+										<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+									</section>
+
+								</div>
+							</section>
+						-->
+
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-70962234-1', 'auto');
+			  ga('send', 'pageview');
+			</script>		
 
 	</body>
 </html>

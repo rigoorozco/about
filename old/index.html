@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+		<title>Rigo Orozco</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/jquery.scrollex.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-medium.css" />
+		</noscript>
+
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="landing">
+
+		<!-- Top Menu/Header -->
+		<header id="header">						
+			<h1 id = "logo"><a href="index.html">Rigo Orozco</a></h1>						<!-- a = hyperlink -->
+			<nav id="nav"> 																	<!-- nav = navigation links -->
+				<ul> 																		<!-- ul = Unordered list -->
+					<li><a href="index.html">Home</a></li> 									<!-- li = list item -->
+					<li><a href="#one" class="scrolly">About Me</a></li>
+					<li><a href="#main" class="scrolly">Project Portfolio</a></li>
+					<li><a href="#four" class="scrolly">Contact</a></li>
+					<!--<li><a href="#" class="button special">Sign Up</a></li>-->
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Banner -->
+		<section id="banner">
+			<div class="content">
+				<header>
+					<h2>Rigo Orozco</h2>
+					<p>Student at the University of Washington <br/>Electrical Engineering</p>
+				</header>
+				<span class="image"><img src="images/intro_pic.jpg" alt="" /></span>
+			</div>
+			<a href="#one" class="goto-next scrolly">Next</a>								<!-- arrow to next part -->
+		</section>
+
+		<!-- About Me / One -->
+		<section id="one" class="spotlight style1 bottom">
+			<span class="image fit main"><img src="images/greenlake.jpg" alt="" /></span>
+			<div class="content">
+				<div class="container">
+					<header>
+						<h2>About Me</h2>
+						<p>I am currently a student at the University of Washington majoring in Electrical Engineering with a focus in Embedded Systems. I'm searching for an internship in hardware or software engineering. I am very motivated and a critical thinker and I believe I've got what it takes to be great engineer.</p>
+					</header>	
+				</div>
+			</div>
+			<a href="#main" class="goto-next scrolly">Next</a>
+		</section>
+
+		<!-- Main -->
+			<div id="main" class="wrapper style1">
+				<div class="container">
+					<header class="major">
+						<h2>Project Portfolio</h2>
+						<!--<p>Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan</p>-->
+					</header>
+					<div class="row 150%">
+						<div class="8u 12u$(medium)">
+							<!-- Content -->
+							<section id="content">
+								<a href="#" class="image fit"><img src="images/tank.png" alt="" /></a>
+								<h3>RoboTank: Autonomous Self Driving Tank</h3>
+								<p>Built around the TI Stellaris LM3S8962. RoboTank was designed to be controlled remotely via Bluetooth as well as autonomously using distance sensors to be maneuvered around confined spaces. Drivers and software for the ADCs, PWMs, UART and other hardware used were all written from scratch for this project (C). FreeRTOS (real time operating system) was used to program the tank.</p>
+								<ul class="actions">
+											<li><a href="docs/tank.pdf" class="button">Report</a></li>
+								</ul>
+							</section>
+
+							<section id="content">
+								<a href="#" class="image fit"><img src="images/uart.png" alt="" /></a>
+								<h3>Universal Asynchronous Receive/Transmitter</h3>
+								<p>Designed a UART in Verilog and programmed the NIOS II microprocessor on a FPGA to run a C application to send and receive byte sized data over a serial link.</p>
+								<ul class="actions">
+									<li><a href="docs/uart.pdf" class="button" target="_blank">Report</a></li>
+								</ul>
+							</section>
+						</div>
+
+						<div class="4u$ 12u$(medium)">
+						<!-- Sidebar -->
+							<section id="sidebar">
+								<section>
+									<div style="margin: 0px auto; text-align: center;">
+										<iframe width="205" height="364" src="https://www.youtube.com/embed/3sT-J5ucjyY" frameborder="0" allowfullscreen></iframe>
+									</div>
+									<h3>RoboTank in Autonomous Mode</h3>
+								</section>
+								<section>
+									<a href="#" class="image fit"><img src="images/amp.jpg" alt="" /></a>
+									<h3>Class AB Amplifier with Variable Gain</h3>
+									<p>Built an audio amplifier using an Op-amp design with BJTs to amplify a signal from an iPhone to a speaker using approximately 1 Watt of power consumption</p>
+									<footer>
+										<ul class="actions">
+											<li><a href="docs/amp.pdf" class="button" target="_blank">Report</a></li>
+										</ul>
+									</footer>
+								</section>
+								<hr />
+								<section>
+									<a href="#" class="image fit"><img src="images/acdc.jpg" alt=""></a>
+									<h3>AC/DC Coverter with Voltage Regulator</h3>
+									<p>Built an AC/DC converter using a full bridge rectifier and boost topology design to convert 7.5VAC to a variable 10VDC to 20VDC.</p>
+									<footer>
+										<ul class="actions">
+											<li><a href="docs/acdc.pdf" class="button" target="_blank">Report</a></li>
+										</ul>
+									</footer>
+								</section>
+							</section>
+						</div>
+
+						<div class="8u 12u$(medium)">
+							<!-- Content -->
+							<h4>Course Work</h4>
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr>
+											<th>Class Number</th>
+											<th>Course Description</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>E E 271</td>
+											<td>Digital Circuits and Systems</td>
+										</tr>
+										<tr>
+											<td>E E 331</td>
+											<td>Semiconductor Diode and Field-effect Transistor Circuit Design</td>
+										</tr>
+										<tr>
+											<td>E E 332</td>
+											<td>Bipolar Transistor Circuit Design</td>
+										</tr>
+										<tr>
+											<td>E E 371</td>
+											<td>Design of Digital Circuits and Systems</td>
+										</tr>
+										<tr>
+											<td>E E 461</td>
+											<td>Computer Network Architectures and Protocols</td>
+										</tr>
+										<tr>
+											<td>E E 472</td>
+											<td>Microcomputer Systems</td>
+										</tr>
+										<tr>
+											<td>E E 471 (Fall '15)</td>
+											<td>Computer Design and Organization</td>
+										</tr>
+										<tr>
+											<td>CSE 351 (Fall '15)</td>
+											<td>Hardware/Software Interface</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- LinkedIn, Email, CV -->
+		<section id="four" class="wrapper style1 special fade-up">
+			<div class="container">
+				<header class="major">
+					<h2>Contact</h2>
+					<!--<p>subtitle</p>-->
+				</header>
+				<div class="box alt">
+					<div class="row uniform">
+						
+						<section class="4u 6u$(medium) 12u$(xsmall)">
+							<!--<span class="icon major fa-linkedin"></span>-->
+							<a href="https://www.linkedin.com/in/rigorozco" class="icon major fa-linkedin" target="_blank">
+								<span class="label"></span>
+							</a>
+							<h3><a href="https://www.linkedin.com/in/rigorozco" target="_blank">LinkedIn</a></h3>
+						</section>
+						<section class="4u 6u$(medium) 12u$(xsmall)">
+							<!--<span class="icon major fa-envelope"></span>-->
+							<a href="mailto:rigodiaz@uw.edu" class="icon major fa-envelope">
+								<span class="label"></span>
+							</a>
+							<h3><a href="mailto:rigodiaz@uw.edu">E-Mail</a></h3>
+						</section>
+						<section class="4u 6u(medium) 12u$(xsmall)">
+							<!--<span class="icon major fa-file"></span>-->
+							<a href="docs/resume.pdf" target="_blank" class="icon major fa-file">
+								<span class="label"></span>
+							</a>
+							<h3><a href="docs/resume.pdf" target="_blank">Resume</a></h3>
+						</section>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="copyright">
+					<li>&copy; Rigo Orozco All rights reserved.</li>
+				</ul>
+			</footer>
+
+	</body>
+</html>
