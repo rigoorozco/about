@@ -28,6 +28,15 @@
 		<script src="assets/js/init.js"></script>
 
 		<script>
+			$(function(){
+				$(".typingfont").typed({
+				strings: ["Electrical Engineering student at \nthe University of Washington"],
+				typeSpeed: 50
+				});
+				});
+		</script>
+
+		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -48,15 +57,7 @@
 					<h1 id="logo"><a href="#">Rigo Orozco-Diaz</a></h1>
 					<div class="intro">
 						<p>
-							<script>
-								$(function(){
-									$(".typingfont").typed({
-									strings: ["Electrical Engineering student at \n the University of Washington"],
-									typeSpeed: 50
-									});
-									});
-							</script>
-							<span style="white-space:pre" class="typingfont"> <!--Student @ UW Electrical Engineering\n--> Hardware Engineer @ Honeywell Aerospace, Summer 2015</span><span class="typed-cursor"></span><br/>
+							<span style="white-space:pre" class="typingfont"></span><span class="typed-cursor"></span><br/>
 						</p>
 					</div>
 				</header>
@@ -93,6 +94,10 @@
 										<p>Electrical Engineering Student at the <br>University of Washington</p>
 									</header>
 									<p>I am currently a student at the University of Washington majoring in Electrical Engineering with a focus in Embedded Systems. I'm searching for an internship in hardware or software engineering. I am very motivated and a critical thinker and I believe I've got what it takes to be great engineer.</p>
+									<!--
+									<pre><code><span style="white-space:pre" class="typingfont"></span><span class="typed-cursor"></span><br/></code>
+									</pre>
+									-->
 								</div>
 							</section>
 
@@ -108,7 +113,21 @@
 										<li class="fa-beer">Trying out new beers</li> 
 										<li class="fa-smile-o">Making new friends</li>
 										<li class="fa-music">Playing the guitar</li>
+										<li class="fa-pencil">Drawing and sketching</li>
+										<li class="fa-book">Reading books and stuff</li>
 									</ul>
+									<div class="box alt">
+										<div class="row 50% uniform">
+											<div class="4u"><span class="image fit"><img src="images/sounders.jpeg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="images/rock.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="images/chinatown.jpg" alt="" /></span></div>
+										</div>
+										<div class="row 50% uniform">
+											<div class="4u"><span class="image fit"><img src="images/drawing.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="images/huskies.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="images/wall.jpg" alt="" /></span></div>
+										</div>
+									</div>
 								</div>
 							</section>
 
@@ -118,6 +137,18 @@
 									<h3>A Few Accomplishments</h3>
 									<p>In the last year of my undergradute career in Electrical Engineering, I have amassed a goldmine of knowledge regarding hardware and software design. Through many long nights of coding and studying, I was able to complete some really interesting projects. Here are a few of the projects I enjoyed working on the most.</p>
 									<div class="features">
+										<!--
+										<article>
+											<a class="image"><img src="images/pod.png" alt="" /></a>
+											<div class="inner">
+												<h4>Hyperloop: University of Washington</h4>
+												<p>Built around the TI Stellaris LM3S8962. RoboTank was designed to be controlled remotely via Bluetooth as well as autonomously using distance sensors to be maneuvered around confined spaces. Drivers and software for the ADCs, PWMs, UART and other hardware used were all written from scratch for this project (C). FreeRTOS (real time operating system) was used to program the tank.</p>
+												<ul class="actions">
+													<li><a href="docs/tank.pdf" target="_blank" class="button">Report</a></li>
+												</ul>
+											</div>
+										</article>
+										-->
 										<article>
 											<a class="image">
 												<div style="margin: 0px auto; text-align: center;">
@@ -128,7 +159,7 @@
 												<h4>RoboTank: Autonomous Self-driving Tank</h4>
 												<p>Built around the TI Stellaris LM3S8962. RoboTank was designed to be controlled remotely via Bluetooth as well as autonomously using distance sensors to be maneuvered around confined spaces. Drivers and software for the ADCs, PWMs, UART and other hardware used were all written from scratch for this project (C). FreeRTOS (real time operating system) was used to program the tank.</p>
 												<ul class="actions">
-													<li><a href="docs/tank.pdf" target="_blank" class="button">Report</a></li>
+													<li><a href="docs/tank.pdf" target="_blank" class="button icon fa-file-pdf-o">Report</a></li>
 												</ul>
 											</div>
 										</article>
@@ -138,7 +169,7 @@
 												<h4>Universal Asynchronous Receive/Transmitter</h4>
 												<p>Designed a UART in Verilog and programmed the NIOS II microprocessor on a FPGA to run a C application to send and receive byte sized data over a serial link.</p>
 												<ul class="actions">
-													<li><a href="docs/uart.pdf" target="_blank" class="button">Report</a></li>
+													<li><a href="docs/uart.pdf" target="_blank" class="button icon fa-file-pdf-o">Report</a></li>
 												</ul>
 											</div>
 										</article>
@@ -148,7 +179,7 @@
 												<h4>Class AB Amplifier with Variable Gain</h4>
 												<p>Built an audio amplifier using an Op-amp design with BJTs to amplify a signal from an iPhone to a speaker using approximately 1 Watt of power consumption</p>
 												<ul class="actions">
-													<li><a href="docs/amp.pdf" target="_blank" class="button">Report</a></li>
+													<li><a href="docs/amp.pdf" target="_blank" class="button icon fa-file-pdf-o">Report</a></li>
 												</ul>
 											</div>
 										</article>
@@ -158,7 +189,7 @@
 												<h4>AC/DC Coverter with Voltage Regulator</h4>
 												<p>Built an AC/DC converter using a full bridge rectifier and boost topology design to convert 7.5VAC to a variable 10VDC to 20VDC.</p>
 												<ul class="actions">
-													<li><a href="docs/acdc.pdf" target="_blank" class="button">Report</a></li>
+													<li><a href="docs/acdc.pdf" target="_blank" class="button icon fa-file-pdf-o">Report</a></li>
 												</ul>
 											</div>
 										</article>
@@ -180,7 +211,7 @@
 						
 						<!-- Five -->
 						<!--
-							<section id="five">
+						<section id="five">
 								<div class="container">
 									<h3>Elements</h3>
 
@@ -523,8 +554,8 @@
 
 								</div>
 							</section>
-						-->
-
+							-->
+	
 					</div>
 
 			</div>
