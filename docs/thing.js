@@ -1,0 +1,4 @@
+
+<script type="text/javascript">window.onload = function () {  var increment = 10;  var total = 3000;  cd = total;  for (var i = total; i >= 0; i -= increment) {    setTimeout(function() {      cd = cd - increment;      document.getElementById("countdown").innerHTML = Math.max(cd / 1000, 0);    }, i);  }}</script><meta http-equiv="refresh" content="3">
+Sort these (in <span id="countdown"></span> seconds):<br> 61, 27, 53, 26, 93, 28, 73, 50, 2, 41, 106, 37, 26, 36, 68, 118, 18, 8, 124, 115, 47, 18, 9, 4, 41, 28, 109, 93, 71, 90.
+<form method="post"><input type="text" name="ascendingCommaSeparated"></input><input type="submit" /></form>
